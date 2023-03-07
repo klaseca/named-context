@@ -1,0 +1,40 @@
+{
+  "name": "named-context",
+  "private": true,
+  "author": "Maxim Molochkov <klaseca@gmail.com> (https://github.com/klaseca)",
+  "license": "MIT",
+  "homepage": "https://github.com/klaseca/named-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klaseca/named-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klaseca/named-context/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "npm run build -ws",
+    "build:react": "npm run build -w packages/react",
+    "build:solid": "npm run build -w packages/solid",
+    "test": "npm run test -ws",
+    "test:react": "npm run test -w packages/react",
+    "test:solid": "npm run test -w packages/solid",
+    "generate-readmes": "node ./scripts/generate-readmes.js",
+    "format": "prettier -w ."
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "eta": "^2.0.1",
+    "happy-dom": "^8.9.0",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.4",
+    "rollup": "^3.20.2",
+    "rollup-plugin-dts": "^5.3.0",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
+  }
+}

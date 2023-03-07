@@ -1,0 +1,7 @@
+# Named context
+
+Work with contexts without boilerplate code, in [react](https://github.com/facebook/react) and [solid](https://github.com/solidjs/solid)
+
+{{~ includeFile('./readme-react') }}
+
+{{~ includeFile('./readme-solid') }}

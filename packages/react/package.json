@@ -1,0 +1,50 @@
+{
+  "name": "named-context-react",
+  "version": "1.0.0",
+  "author": "Maxim Molochkov <klaseca@gmail.com> (https://github.com/klaseca)",
+  "license": "MIT",
+  "homepage": "https://github.com/klaseca/named-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klaseca/named-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klaseca/named-context/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "postbuild": "prettier -w .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.28",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "types": "./dist/index.d.cts",
+  "main": "./dist/index.cjs",
+  "expotrs": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "./dist"
+  ],
+  "keywords": [
+    "react",
+    "context"
+  ]
+}
