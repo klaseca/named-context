@@ -61,6 +61,5 @@ export const createNamedContext = <
   } as NamedContext<Value, Name, NullishAllowed>;
 };
 
-// HACK: Fix broken generic syntax for arrow function in tsx file
 export const valueType = <T extends unknown = undefined>(): T | undefined =>
   undefined;

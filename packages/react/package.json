@@ -31,7 +31,7 @@
   },
   "types": "./dist/index.d.cts",
   "main": "./dist/index.cjs",
-  "expotrs": {
+  "exports": {
     ".": {
       "import": {
         "types": "./dist/index.d.mts",
