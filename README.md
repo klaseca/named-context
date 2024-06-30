@@ -1,7 +1,7 @@
 # Named context
 
-![NPM Version](https://img.shields.io/npm/v/named-context-react?label=named-context-react)
-![NPM Version](https://img.shields.io/npm/v/named-context-solid?label=named-context-solid)
+[![NPM Version](https://img.shields.io/npm/v/named-context-react?label=named-context-react)](https://www.npmjs.com/package/named-context-react)
+[![NPM Version](https://img.shields.io/npm/v/named-context-solid?label=named-context-solid)](https://www.npmjs.com/package/named-context-solid)
 
 Work with contexts without boilerplate code, in [react](https://github.com/facebook/react) and [solid](https://github.com/solidjs/solid)
 
