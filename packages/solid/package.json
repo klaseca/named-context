@@ -13,9 +13,13 @@
   },
   "type": "module",
   "scripts": {
+    "rm-dist": "node ../../scripts/rm-dist.js",
+    "prebuild": "npm run rm-dist",
     "build": "rollup -c",
-    "postbuild": "prettier -w .",
-    "test": "vitest run"
+    "postbuild": "prettier -w ./dist",
+    "test": "vitest run",
+    "release-tag": "node ../../scripts/make-release-tag.js",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@solidjs/testing-library": "^0.7.0",
